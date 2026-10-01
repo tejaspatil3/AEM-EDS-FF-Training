@@ -1,0 +1,57 @@
+Hello
+
+What is Edge Delivery Services (EDS)?
+
+Adobe Edge Delivery Services is a modern way to build and deliver websites that focuses on:
+
+Fast page loading
+Simpler content authoring
+Better SEO
+Easy content management
+Delivery through Adobe's edge network
+
+Instead of heavy, complex AEM components, EDS allows content creators to manage content using familiar tools like:
+
+Microsoft Word
+Google Docs
+SharePoint
+AEM Universal Editor
+
+and publish it directly to websites.
+
+Traditional Flow---
+Author
+   ↓
+AEM Author
+   ↓
+AEM Publish
+   ↓
+Dispatcher/CDN
+   ↓
+Website
+
+EDS Flow----
+Author (Word/Docs/AEM)
+          ↓
+Edge Delivery Services
+          ↓
+    CDN / Edge
+          ↓
+      Website
+
+------------------------------------------------
+
+data stored in content repos
+
+github stores the code for eds
+
+aem.live
+
+eds analogies
+block = component
+
+block level styling sits in component.css
+block level logic sits in component.js
+
+no html , it is created using js
+
