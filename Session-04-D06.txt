@@ -1,0 +1,40 @@
+EDS - Edge Delivery Services
+
+AEM - JCr Stores , Author using - cq.Dialogs
+CMS - Stores and manages content
+
+AEM - heavy to maintain, not fast 
+lot of code and effor to do things
+
+
+EDS - disruptive CMS
+
+focuses on Document to DOM - started with helix project
+
+Content writer - from Marketing Team - gives the content to be Author
+
+Author from client - authors the content form the documents - from content writer
+
+-------------------------------------------------------------------------------------------
+
+To remove this extra layer of authoring 
+Adobes EDS - Works on Document to DOM 
+direct the content from the documents to Webpages directly
+
+-------------------------------------------------------------------------------------------
+Pure content stored on cloud
+
+the code seats on Github
+
+content is segrigated - images are stored in DAM
+
+EDS - Ease of Authoring , Page Velocity
+
+-----------------------------------------------------------------------------------------
+
+How Conversion (doc-DOM) Happen?
+
+tamashree- adobe ID
+
+async loading - first main content - not evering simultaneously
+

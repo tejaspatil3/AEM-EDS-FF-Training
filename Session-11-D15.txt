@@ -1,0 +1,29 @@
+go through ppt
+
+how we get the aem site to EDS site 
+
+we have AEM Importer 
+interface can be used to download the content documents 
+we can upload them EDS source and use that for EDS
+
+Agents that convert the site for EDS
+the content will come but for the content we have to write code 
+to make it look like it used to on AEM site
+
+transformation file
+tools/importer/import.JS
+
+we  have to create/customize this file 
+
+
+client server architecture
+
+small server on GitHub
+no serverside sessions - 
+we use browser side cookies - for user management and session tracking
+
+requests are intercepted by the adobe's server on GitHub
+once all the CDN's are updated the sites are served from CDN 
+
+data persistance layer 
+

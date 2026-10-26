@@ -1,0 +1,52 @@
+issue with da.live
+
+aem sidekick library 
+https://sidekick-library--aem-block-collection--adobe.aem.page/tools/sidekick/library.html?plugin=blocks&path=/block-collection/accordion&index=0
+
+has out of the box components - most of the basic components
+
+get the code from the source of the component form github by ckicking the link in sidekick library
+
+the copy option shows us how the component will look while authoring the document
+
+customization can be done from js and css
+
+my-eds-project/
+│
+├── blocks/
+│   ├── hero/
+│   │   ├── hero.js
+│   │   └── hero.css
+│   │
+│   ├── cards/
+│   │   ├── cards.js
+│   │   └── cards.css
+│   │
+│   └── footer/
+│       ├── footer.js
+│       └── footer.css
+│
+├── scripts/
+│   ├── scripts.js
+│   ├── aem.js
+│   └── delayed.js
+│
+├── styles/
+│   └── styles.css
+│
+├── icons/
+│
+├── headers/
+│
+├── footers/
+│
+├── index.html
+│
+└── fstab.yaml
+
+Block has same name of block - folder , .css and .js
+
+a way around for inheritance - export funcatinality and import in other
+
+
+

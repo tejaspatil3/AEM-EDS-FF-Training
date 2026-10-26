@@ -1,0 +1,53 @@
+BLocks do everything 
+js gets everything done - css styles it
+
+EDS has 3 content sources
+
+cloudStorage - Gdrive , sharepoint
+DA (DarkAlie) - da.live (app)
+old JCR nodes - for - Legacy People from JCR  - not prefered but a way out
+
+sometimes clients are not comfortable in havign their data on cloud 
+we need secure environment for them - da.live
+
+EDS - codes seats in Github - content in documents on da.live or cloud 
+we merge them together we get our website up and running
+
+https://www.aem.live/developer/tutorial
+
+sanjiv shukla - sandbox access
+
+
+
+my-eds-project/
+│
+├── blocks/
+│   ├── hero/
+│   │   ├── hero.js
+│   │   └── hero.css
+│   │
+│   ├── cards/
+│   │   ├── cards.js
+│   │   └── cards.css
+│   │
+│   └── footer/
+│       ├── footer.js
+│       └── footer.css
+│
+├── scripts/
+│   ├── scripts.js
+│   ├── aem.js
+│   └── delayed.js
+│
+├── styles/
+│   └── styles.css
+│
+├── icons/
+│
+├── headers/
+│
+├── footers/
+│
+├── index.html
+│
+└── fstab.yaml

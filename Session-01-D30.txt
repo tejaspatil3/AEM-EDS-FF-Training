@@ -55,3 +55,35 @@ block level logic sits in component.js
 
 no html , it is created using js
 
+my-eds-project/
+│
+├── blocks/
+│   ├── hero/
+│   │   ├── hero.js
+│   │   └── hero.css
+│   │
+│   ├── cards/
+│   │   ├── cards.js
+│   │   └── cards.css
+│   │
+│   └── footer/
+│       ├── footer.js
+│       └── footer.css
+│
+├── scripts/
+│   ├── scripts.js
+│   ├── aem.js
+│   └── delayed.js
+│
+├── styles/
+│   └── styles.css
+│
+├── icons/
+│
+├── headers/
+│
+├── footers/
+│
+├── index.html
+│
+└── fstab.yaml
