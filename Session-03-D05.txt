@@ -1,0 +1,4 @@
+CaS conetent as service - json content
+
+Ajax - Asynchronas js
+json for the handshake

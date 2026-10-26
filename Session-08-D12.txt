@@ -1,0 +1,63 @@
+
+# AEM Edge Delivery Services (EDS): Architecture & Core Concepts
+
+## 1. What is EDS?
+
+* **Definition:** A cloud-native, high-performance web delivery architecture (formerly known as Project Helix / Franklin).
+* **Primary Goal:** Achieve optimal performance (consistently targeting 100 on Google Lighthouse), extreme simplicity, and zero build-step front-end development.
+* **Core Shift:** Decouples **Content** authoring from **Code** management, serving pre-optimized semantic HTML directly from the Edge network.
+
+---
+
+## 2. Core Architectural Pillars
+
+EDS relies on a **headless/composable architecture** split into two independent tracks that converge at the Edge:
+
+```
+[ Content Sources ] (SharePoint / Google Docs / Universal Editor) 
+                                      │
+                                      ▼  (Transforms to HTML/JSON)
+                                 [ EDS Edge ] ◄─── [ Code Repository ] (GitHub)
+                                      │              (Vanilla JS, CSS)
+                                      ▼
+                                [ End User ]
+
+```
+
+### A. Content Track (Document-Based Authoring)
+
+* **Where content lives:** Familiar tools like **Google Docs**, **Microsoft SharePoint**, or the **AEM Universal Editor**.
+* **How it works:** Authors write content using structured text, tables, and headings.
+* **Transformation:** EDS automatically converts source documents into clean, semantic HTML and JSON on the fly.
+
+### B. Code Track (Developer Environment)
+
+* **Where code lives:** A standard **GitHub repository**.
+* **Tech Stack:** Plain HTML, modern CSS, and **Vanilla JavaScript** (no heavy frameworks, complex bundlers, or transpilation steps required by default).
+* **Deployment:** Code changes pushed to the `main` branch are instantly synchronized via the `aem-code-sync` GitHub app directly to the Edge network.
+
+---
+
+## 3. End-to-End Request Flow (How It Works)
+
+1. **User Requests Page:** A user visits the website URL. The request hits the nearest **Edge Node / CDN**.
+2. **Edge Retrieval:**
+* The Edge layer fetches the raw content representation (parsed from the Word/Google Doc).
+* It concurrently fetches the matching lightweight frontend code (CSS/JS blocks) from the GitHub-synced repository.
+
+
+3. **Assembly:** The Edge network assembles the raw semantic HTML with the proper CSS and JS wrappers.
+4. **Phased Delivery to Browser:**
+* **Eager Phase:** Instantly renders critical above-the-fold content for maximum speed (LCP optimization).
+* **Lazy Phase:** Loads secondary below-the-fold blocks and assets.
+* **Delayed Phase:** Loads analytics, tracking, and non-critical scripts after a short delay.
+
+
+
+---
+
+## 4. Key Architectural Concepts
+
+* **Blocks:** The primary unit of frontend development. A block is a self-contained chunk of HTML structure, CSS, and JS (e.g., a `hero`, `carousel`, or `card-grid`).
+* **Separate Lifecycles:** Publishing content (moving a page from *Preview* to *Live* via the AEM Sidekick browser extension) does **not** require a code deployment, and updating code does not alter content blocks unless structures change.
+* **No Server-Side Rendering (SSR) Bloat:** Content is pre-processed or cached aggressively at the edge, drastically minimizing compute overhead and reducing infrastructure costs.

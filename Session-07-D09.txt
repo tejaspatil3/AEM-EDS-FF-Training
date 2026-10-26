@@ -1,0 +1,67 @@
+buildAutoBLocks 
+
+please know
+
+some blocks dont have saurce code in sidekick library
+
+3 types of blocks
+
+
+some of them a default blocks 
+they have their structure defined 
+if we want to customize them then we ahve to style in styels.css
+
+custom blocks
+
+
+developer/block party - see the block collection and other
+EDS Enablers - Open source community
+
+
+form - depricated
+using the json the form is created
+we fill the details in the spreadsheet
+
+the form will be shown if we have the block collection
+
+Adobe is using
+adaptive forms - send data and get response
+
+form validation - EDS will provide default validation toggle
+for maindatory or non mandatory validation - we can do that 
+for custom validation we need to do JS validation
+
+how to get the incoming data and save it then we can do it 
+renaming the sheet to incoming
+We can take the data form spreadsheet - using JS
+
+- loading options - 
+
+we have spreadsheet and we can get JSON from the spreadsheet
+
+--------------------------------------------------------
+
+Everthing can be customized by putting a custom layer on it
+
+web performance 
+---
+chrome light score keep 100
+JS is the loading
+
+delayed loading will achive the performance 
+we load the heavy content in layLoading and delayedLoading
+
+we need to load - first contentfull paint first
+
+--------------------------------------------------------
+We need not to add any extra burden on the already 
+existing - write optimized code
+
+-------------------------------------------------------
+Minification
+
+EDS has no compilition and minification 
+we have to take care of the minification if it is helping
+for performance 
+
+--------------------------------------------------------
